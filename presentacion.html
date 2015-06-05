@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>EditorsLab El País 2015</title>
+<meta name="author" content="(Martín Nadal, Chema Blanco y Adolfo Antón Bravo)"/>
+<meta name="description" content=""/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/2.5.0/css/reveal.min.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/2.5.0/css/theme/default.css" id="theme"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/2.5.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section>
+<h1>Mapas del <br /> descontento</h1>
+<h2>Martín Nadal, Chema Blanco y Adolfo Antón Bravo</h2>
+
+<img src="https://farm4.staticflickr.com/3815/11996693574_a0e83962b0_z_d.jpg" alt="11996693574_a0e83962b0_z_d.jpg" />
+</section>
+
+<section>
+<section id="sec-" >
+
+<h2>La idea</h2>
+<p>
+Martín, después de ver estas imágenes, quería tener saber más sobre el estado del descontento en España.
+</p>
+
+<p>
+Y así se propuso crear una representación un forma de mapa de este descontento.
+</p>
+</section>
+
+</section>
+<section>
+<section id="sec-" >
+
+<h2>¿Cómo?</h2>
+<p>
+Pensó que no sería difícil conseguir una buena fuente de datos sobre la protesta&#x2026; pensó mal.
+</p>
+
+<p>
+Luego limpiaría y organizaría los datos.
+</p>
+
+<p>
+Y por último los visualizaría en el mapa.
+</p>
+</section>
+
+</section>
+<section>
+<section id="sec-" >
+
+<h2>Entonces, ¿de dónde?</h2>
+<ul class="org-ul">
+<li>Primera opción: fuentes de datos oficiales, INE
+</li>
+<li>¿GDELT? Base global de eventos
+</li>
+<li>Coabulario de El País, ¡bingo!
+</li>
+</ul>
+</section>
+
+</section>
+<section>
+<section id="sec-" >
+
+<h2>Ventajas del colabulario</h2>
+<ul class="org-ul">
+<li>Etiqueta los contenidos
+</li>
+<li>Permite buscar artículos
+</li>
+<li>Relaciona artículos
+</li>
+<li>Fácil extracción de información
+</li>
+</ul>
+</section>
+
+</section>
+<section>
+<section id="sec-" >
+
+<h2>Manos a la obra</h2>
+<ul class="org-ul">
+<li>Scraping de contenidos
+</li>
+<li>Limpieza y organización de:
+<ul class="org-ul">
+<li>Etiquetas
+</li>
+<li>Titulares
+</li>
+<li>Fechas
+</li>
+<li>Lugar
+</li>
+</ul>
+</li>
+<li>Extracción de entidades manifestantes, vecinos, trabajadores, etc.
+</li>
+</ul>
+</section>
+
+</section>
+<section>
+<section id="sec-" >
+
+<h2>Visualización</h2>
+<ul class="org-ul">
+<li>Web
+</li>
+<li>Eje temporal: panorámica en el tiempo
+</li>
+<li>Mapa: panorámica geográfica
+</li>
+</ul>
+</section>
+
+</section>
+<section>
+<section id="sec-" >
+
+<h2>Boceto</h2>
+<p>
+<a href="http://muimota.net/hackaton/esquema.jpg">boceto</a>
+<img src="http://muimota.net/hackaton/esquema.jpg" alt="esquema.jpg" />
+</p>
+</section>
+</section>
+<section>
+<section id="sec-" >
+
+<h2>Inconsistencias</h2>
+<ul class="org-ul">
+<li>Muchas informaciones se escriben desde Madrid
+</li>
+<li>Inconsistencias de los datos
+</li>
+<li>El colabulario es una buena base semántica
+</li>
+<li>Necesitamos más datos
+</li>
+</ul>
+</section>
+
+</section>
+<section>
+<section id="sec-" >
+
+<h2>To Do</h2>
+<ul class="org-ul">
+<li>Verificación de datos, reconciliación
+</li>
+<li>Mejor contextualización (automatica) de las noticias
+</li>
+<li>Búsqueda de otras fuentes de datos
+</li>
+</ul>
+</section>
+
+</section>
+<section>
+<section id="sec-" >
+
+<h2>Conclusiones</h2>
+<ul class="org-ul">
+<li>Visión panorámica del descontento
+</li>
+<li>Representada geográfica y temporal
+</li>
+<li>Tenemos algunas ideas que pueden ser útiles para mejorar el sistema de búsqueda de El País.
+</li>
+</ul>
+</section>
+
+</section>
+</div>
+</div>
+
+<script src="http://cdn.jsdelivr.net/reveal.js/2.5.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/2.5.0/js/reveal.min.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: true,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/2.5.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/2.5.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/2.5.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/2.5.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/2.5.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/2.5.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+]
+});
+</script>
+</body>
+</html>
