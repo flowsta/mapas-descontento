@@ -18,4 +18,4 @@ The system has scraped around 2500 articles including titles, some keywords, pla
 
 The team behind this project is: Martin Nada, Adolfo Antón Bravo y Chema Blanco.
 
-Check the website at [http://muimota.net/hackaton]
+Check the website at http://muimota.net/hackaton
