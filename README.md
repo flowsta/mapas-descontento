@@ -16,4 +16,6 @@ The data was gathered from the tag explorer of the Spanish newspaper El País. T
 
 The system has scraped around 2500 articles including titles, some keywords, place, tags, etc. Information is automatically balanced and organized. With these results, we can create a dynamic javascript visualization that allows the user to explore the discontent in Spain from the coming of democracy.
 
-The team behind this project is: Martin Nadal, Adolfo Antón Bravo y Chema Blanco.
+The team behind this project is: Martin Nada, Adolfo Antón Bravo y Chema Blanco.
+
+Check the website at [http://muimota.net/hackaton]
